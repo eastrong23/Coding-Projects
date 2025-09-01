@@ -1,7 +1,7 @@
 # A/B Testing in R
 
 ## Task Description
-You are a team of senior analysts working for the Analytics Department of a consumer lending company. The company receives loan applications from consumers, mostly in the range of $20,000–$35,000, and needs to decide whether to approve or reject each of them. The overall goal of the company is to minimize their losses from bad loans (loans that default) and maximize their profit from good loans (loans paid back on time). The company has been facing challenges related to loan approval review effectiveness, as loan officers have been producing high error rates.
+You are a team of senior analysts working for the Analytics Department of a consumer lending company. The company receives loan applications from consumers, mainly in the range of $20,000–$35,000, and needs to decide whether to approve or reject each of them. The overall goal of the company is to minimize their losses from bad loans (loans that default) and maximize their profit from good loans (loans paid back on time). The company has been facing challenges related to loan approval review effectiveness, as loan officers have been producing high error rates.
 
 ## Approach
 - Processed and cleaned loan application data.  
@@ -18,9 +18,10 @@ You are a team of senior analysts working for the Analytics Department of a cons
 ## Challenges & Learnings
 - **Data imbalance**: The control group contained only 10 samples, while the treatment group had 28 samples. This uneven distribution limited the robustness of statistical comparisons.  
 - **Test selection**: Precision and recall data did not always follow a normal distribution across groups. As a result, the Mann-Whitney U test was used instead of the more common t-test.  
-- **Power analysis**: When estimating the sample size required for 80% power, the effect size for recall was too small. Under the fixed treatment group size, the required control group sample size could not be determined.
+- **Power analysis**: When estimating the sample size required for 80% power, the effect size for recall was too small. Under the fixed treatment group size, the sample size needed for the control group could not be determined.
 
 ## Tech Stack
 - R  
 - dplyr, ggplot2  
 - Statistical testing (power.t2n.test, Mann-Whitney U test)  
+
