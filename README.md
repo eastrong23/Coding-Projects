@@ -2,7 +2,7 @@
 
 A collection of projects completed during my MSc in Business Analytics and personal learning.
 
-## AB Testing in R
+## A/B Testing in R
 - R, statistical testing, ggplot visualization  
 
 Conducted an A/B test in R to compare the effectiveness of a new loan approval model against the existing one. Since the case did not specify a clear business priority, both recall and precision metrics were used for evaluation.  
